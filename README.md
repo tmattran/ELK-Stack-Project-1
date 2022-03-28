@@ -2,7 +2,7 @@ Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
-XCorp Red Team RG diagram.png
+"C:\Users\toddm\My Drive\Todd Mattran HW 12\XCorp Red Team RG Diagram.png"
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
 
