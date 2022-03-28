@@ -6,6 +6,10 @@ https://github.com/tmattran/ELK-Stack-Project-1/blob/main/Diagrams/XCorp%20Red%2
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
 
+Enter the playbook file:
+
+https://github.com/tmattran/ELK-Stack-Project-1/blob/main/Ansible/Install-ELK.yml
+
 This document contains the following details:
 
 Description of the Topology
