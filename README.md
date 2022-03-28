@@ -35,26 +35,11 @@ What does Metricbeat record?
 Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
-Name
-Function
-IP Address
-Operating System
-Jump Box Provisioner
-Gateway
-52.238.31.167
-Linux
-Web 1
-Gateway
-13.86.154.148
-Linux
-Web 2
-Gateway
-13.86.154.148
-Linux
-Web 3
-Gateway
-13.86.154.148
-Linux
+Name                    Function            IP Address          Operating System
+Jump Box Provisioner    Gateway             52.238.31.167       Linux
+Web 1                   Gateway             13.86.154.148       Linux
+Web 2                   Gateway             13.86.154.148       Linux
+Web 3                   Gateway             13.86.154.148       Linux
 
 Access Policies
 
@@ -67,30 +52,12 @@ Only the Jump Box Provisioner machine can accept connections from the Internet. 
 Machines within the network can only be accessed by Jump Box Provisioner.
 
 A summary of the access policies in place can be found in the table below.
-Name
-Publicly Accessible
-Allowed IP Addresses
-Jump Box Provisioner
-Yes
-52.238.31.167
-XCorp Red Team LB
-Yes
-13.86.154.148
-Web-1
-
-Web-2
-
-Web-3
-No
-
-No
-
-No
-10.0.0.5, 10.1.0.4, 13.86.154.148
-
-10.0.0.6, 10.1.0.4, 13.86.154.148
-
-10.0.0.10, 10.1.0.4, 13.86.154.148
+Name                    Publicly Accessible     Allowed IP Addresses
+Jump Box Provisioner    Yes                     52.238.31.167
+XCorp Red Team LB       Yes                     13.86.154.148
+Web-1                   No                      10.0.0.5, 10.1.0.4, 13.86.154.148
+Web-2                   No                      10.0.0.6, 10.1.0.4, 13.86.154.148
+Web-3                   No                      10.0.0.10, 10.1.0.4, 13.86.154.148
 
 Elk Configuration
 
