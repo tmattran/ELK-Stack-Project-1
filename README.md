@@ -83,8 +83,9 @@ Install docker.io, install python3-pip, install Python Docker module.\
 Increase virtual memory.\
 Use more memory.\
 Download and launch a docker elk container on restart.\
-Enable service docker on boot.\
-The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
+Enable service docker on boot.
+
+### The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
 ### Target Machines & Beats
 
