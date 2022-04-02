@@ -8,7 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 Enter the playbook file:
 
-![alt text](https://github.com/tmattran/ELK-Stack-Project-1/blob/main/Ansible/Install-ELK.yml)
+(https://github.com/tmattran/ELK-Stack-Project-1/blob/main/Ansible/Install-ELK.yml)
 
 ### This document contains the following details:
 
@@ -40,11 +40,12 @@ Metricbeat takes the metrics and statistics that it collects and ships them to t
 
 ### The configuration details of each machine may be found below.
 
-|: Name                    |: Function            |: IP Address          |: Operating System
-|: Jump Box Provisioner    |: Gateway             |: 52.238.31.167       |: Linux
-|: Web 1                   |: Gateway             |: 13.86.154.148       |: Linux
-|: Web 2                   |: Gateway             |: 13.86.154.148       |: Linux
-|: Web 3                   |: Gateway             |: 13.86.154.148       |: Linux
+| Name                    | Function            | IP Address          | Operating System |
+|-------------------------|---------------------|---------------------|------------------|
+| Jump Box Provisioner    | Gateway             | 52.238.31.167       | Linux            |
+| Web 1                   | Gateway             | 13.86.154.148       | Linux            |
+| Web 2                   | Gateway             | 13.86.154.148       | Linux            |
+| Web 3                   | Gateway             | 13.86.154.148       | Linux            |
 
 ### Access Policies
 
@@ -52,18 +53,20 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-52.238.31.167\
-13.86.154.148
+### 52.238.31.167
+### 13.86.154.148
 
 ### Machines within the network can only be accessed by Jump Box Provisioner.
 
 ### A summary of the access policies in place can be found in the table below.
-Name                    Publicly Accessible     Allowed IP Addresses
-Jump Box Provisioner    Yes                     52.238.31.167
-XCorp Red Team LB       Yes                     13.86.154.148
-Web-1                   No                      10.0.0.5, 10.1.0.4, 13.86.154.148
-Web-2                   No                      10.0.0.6, 10.1.0.4, 13.86.154.148
-Web-3                   No                      10.0.0.10, 10.1.0.4, 13.86.154.148
+
+| Name                  | Publicly Accessible    | Allowed IP Addresses               |
+|-----------------------|------------------------|------------------------------------|
+| Jump Box Provisioner  | Yes                    | 52.238.31.167                      |
+| XCorp Red Team LB     | Yes                    | 13.86.154.148                      |
+| Web-1                 | No                     | 10.0.0.5, 10.1.0.4, 13.86.154.148  |
+| Web-2                 | No                     | 10.0.0.6, 10.1.0.4, 13.86.154.148  |
+| Web-3                 | No                     | 10.0.0.10, 10.1.0.4, 13.86.154.148 | 
 
 ### Elk Configuration
 
@@ -112,6 +115,7 @@ Metricbeat collects metrics from the operating system and services running on th
 
 Copy the filebeat-config.yml file to root@c2e11045c8f5:/etc/ansible/files/filebeat-config.yml\
 Update the ansible hosts file to include the following webservers:\
+
 [webservers]\
 = 10.0.0.5 ansible_python_interpreter=/usr/bin/python3\
 = 10.0.0.6 ansible_python_interpreter=/usr/bin/python3\
