@@ -30,22 +30,23 @@ Load balancers protect servers and distribute traffic evenly across the servers 
 ### What is the advantage of a jump box?
 The jump box is the only way to access the DVWA machines within the local network via SSH key on 22 making the network secure from external attacks.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs. itegrating an ELK server allows users to easily monitor the vulnerable VM's for changes to the data and system logs.
 
 ### What does Filebeat watch for? 
 Filebeat monitors the log files or location you specify, collects log events and forwards them to the Elasticsearch or Logstash.
 
 ### What does Metricbeat record?
-Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
+Metricbeat periodically collects metrics from the operating system and from services running on the server. Metricbeat then takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 ### The configuration details of each machine may be found below.
 
-| Name                    | Function            | IP Address          | Operating System |
-|-------------------------|---------------------|---------------------|------------------|
-| Jump Box Provisioner    | Gateway             | 52.238.31.167       | Linux            |
-| Web 1                   | Gateway             | 13.86.154.148       | Linux            |
-| Web 2                   | Gateway             | 13.86.154.148       | Linux            |
-| Web 3                   | Gateway             | 13.86.154.148       | Linux            |
+| Name                    | Function                                               | IP Address  | Operating System     |
+|-------------------------|--------------------------------------------------------|-------------|----------------------|
+| Jump Box Provisioner    | Gateway                                                | 10.0.0.1    | Linux (ubuntu18.04)  |
+| Web 1                   | Process web content and deliver to users               | 10.0.0.5    | Linux (ubuntu18.04)  |
+| Web 2                   | Process web content and deliver to users               | 10.0.0.6    | Linux (ubuntu18.04)  |
+| Web 3                   | Process web content and deliver to users               | 10.0.0.10   | Linux (ubuntu18.04)  |
+| ELK-XCorpRedTeam VM     | Collects and process data from Web 1, Web 2 and Web 3  | 10.1.0.4    | Linux (ubuntu18.04)  |
 
 ### Access Policies
 
@@ -53,16 +54,15 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-### 52.238.31.167
-### 13.86.154.148
+### Whitelisted IP Addresses:
 
-### Machines within the network can only be accessed by Jump Box Provisioner.
+The whitelisted IP Address is Machines within the network can only be accessed by Jump Box Provisioner.
 
 ### A summary of the access policies in place can be found in the table below.
 
 | Name                  | Publicly Accessible    | Allowed IP Addresses               |
 |-----------------------|------------------------|------------------------------------|
-| Jump Box Provisioner  | Yes                    | 52.238.31.167                      |
+| Jump Box Provisioner  | Yes                    | 73.110.194.27, 73.36.202.195       |
 | XCorp Red Team LB     | Yes                    | 13.86.154.148                      |
 | Web-1                 | No                     | 10.0.0.5, 10.1.0.4, 13.86.154.148  |
 | Web-2                 | No                     | 10.0.0.6, 10.1.0.4, 13.86.154.148  |
