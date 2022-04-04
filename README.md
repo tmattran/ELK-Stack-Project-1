@@ -2,7 +2,7 @@
 
 ### The files in this repository were used to configure the network depicted below.
 
-![XCorp%20Red%20Team%20Topography](https://github.com/tmattran/ELK-Stack-Project-1/blob/main/Diagrams/XCorp%20Red%20Team%20Topography.png)
+![XCorp Read Team Topography.png](https://github.com/tmattran/ELK-Stack-Project-1/blob/main/Diagrams/XCorp%20Red%20Team%20Topography.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -43,9 +43,9 @@ Metricbeat periodically collects metrics from the operating system and from serv
 | Name                    | Function                                               | IP Address  | Operating System     |
 |-------------------------|--------------------------------------------------------|-------------|----------------------|
 | Jump Box Provisioner    | Gateway                                                | 10.0.0.1    | Linux (ubuntu18.04)  |
-| Web 1                   | Process web content and deliver to users               | 10.0.0.5    | Linux (ubuntu18.04)  |
-| Web 2                   | Process web content and deliver to users               | 10.0.0.6    | Linux (ubuntu18.04)  |
-| Web 3                   | Process web content and deliver to users               | 10.0.0.10   | Linux (ubuntu18.04)  |
+| Web-1                   | Process web content and deliver to users               | 10.0.0.5    | Linux (ubuntu18.04)  |
+| Web-2                   | Process web content and deliver to users               | 10.0.0.6    | Linux (ubuntu18.04)  |
+| Web-3                   | Process web content and deliver to users               | 10.0.0.10   | Linux (ubuntu18.04)  |
 | ELK-XCorpRedTeam VM     | Collects and process data from Web 1, Web 2 and Web 3  | 10.1.0.4    | Linux (ubuntu18.04)  |
 
 ### Access Policies
@@ -90,7 +90,7 @@ Download and launch a docker elk container on restart.\
 Enable service docker on boot.
 
 ### The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
-![alt text](https://github.com/tmattran/ELK-Stack-Project-1/blob/main/images/Snapshot%20for%20Project%201-ELK.png)
+![Snapshot for Project 1-ELK.png](https://github.com/tmattran/ELK-Stack-Project-1/blob/main/images/Snapshot%20for%20Project%201-ELK.png)
 
 ### Target Machines & Beats
 
