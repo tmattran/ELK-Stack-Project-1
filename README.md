@@ -56,7 +56,11 @@ Only the Jump Box Provisioner machine can accept connections from the Internet. 
 
 ### Whitelisted IP Addresses:
 
-The whitelisted IP Address is Machines within the network can only be accessed by Jump Box Provisioner.
+The whitelisted IP Addresses are 73.110.194.27 and 73.36.202.195, the local host contains the SSH private key to log into the JumpBox Provisioner on port 22. Machines within the network can only be accessed by Jump Box Provisioner.
+
+### Which machine did I allow to access my ELK VM and what are the addesses?
+
+The Jump Box Provisioner has access to the ELK VM with the private IP address of 10.1.0.4 using SSH on port 22. The local host has access to the ELK VM with a public IP address of 73.110.194.27 and 73.36.202.195 using TCP on port 5601. 
 
 ### A summary of the access policies in place can be found in the table below.
 
