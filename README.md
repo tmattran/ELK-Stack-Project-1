@@ -76,7 +76,7 @@ The Jump Box Provisioner has access to the ELK VM with the private IP address of
 
 ### Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-### What is the main advantage of automating configurations with Ansible?
+### The main advantage of automating configurations with Ansible?
 
 Ansible is a provisioner that is utilized to automatically deliver Infrastructure as Code (IAC), which drastically reduces the potential for human error and simplifies the process of configuring potentially thousands of machines identically all at once.
 
@@ -132,8 +132,6 @@ Update the ansible hosts file to include the following webservers:\
 
 Run the playbook, and navigate to http://20.25.25.104:5601/app/kibana to check that the installation worked as expected.
 
-### Answer the following questions to fill in the blanks:
-
 ### Which file is the playbook? Where do you copy it?
 
 = filebeat-playbook.yml is the playbook.\
@@ -144,7 +142,7 @@ Run the playbook, and navigate to http://20.25.25.104:5601/app/kibana to check t
 = The root@c2e11045c8f5:/etc/ansible/hosts file has to be updated in order to run the playbook on a specific machine.\
 = Once you navigate into the /etc/ansible/hosts, nano into the hosts file and add the [webservers] that will be configured with filebeat and the [elk] VM which will be configured with the ELK Stack.
 
-### Which URL do you navigate to in order to check that the ELK server is running?
+### In order to check that the ELK server is running, I went to the following URL?
 
 = http://20.25.25.104:5601/app/kibana
 
