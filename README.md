@@ -90,7 +90,7 @@ Download and launch a docker elk container on restart.\
 Enable service docker on boot.
 
 ### The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
-![Snapshot for Project 1-ELK](https://github.com/tmattran/ELK-Stack-Project-1/blob/main/images/Snapshot%20for%20Project%201-ELK.png)
+![Snapshot for Project 1-ELK](https://github.com/tmattran/ELK-Stack-Project-1/blob/main/images/Snapshot%20for%20Project%201-ELK.png?raw=true)
 
 ### Target Machines & Beats
 
